@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Type Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-card">
+            <div class="quiz-header">
+                <h1>Discover Your Skin Type</h1>
+                <p class="subtitle">Take this quick quiz to find your perfect skincare routine</p>
+            </div>
+            
+            <form id="quizForm">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question active" data-step="1">
+                        <h3><i class="fas fa-soap"></i> 30 minutes after cleansing, how does your skin feel?</h3>
+                        <div class="options">
+                            <label class="option-card">
+                                <input type="radio" name="cleansingEffect" value="dry" required>
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-wind"></i></span>
+                                    <span class="option-text">Tight and Uncomfortable</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="cleansingEffect" value="normal">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-check-circle"></i></span>
+                                    <span class="option-text">Comfortable and Balanced</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="cleansingEffect" value="combination">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-adjust"></i></span>
+                                    <span class="option-text">Oily T-zone, Normal/Dry Elsewhere</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="cleansingEffect" value="oily">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-oil-can"></i></span>
+                                    <span class="option-text">Shiny All Over</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="navigation">
+                            <button type="button" class="next-btn" data-next="2">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="question" data-step="2">
+                        <h3><i class="fas fa-sun"></i> By mid-day, how does your T-zone (forehead, nose, chin) look?</h3>
+                        <div class="options">
+                            <label class="option-card">
+                                <input type="radio" name="tZone" value="very-oily" required>
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-fire"></i></span>
+                                    <span class="option-text">Very Shiny/Oily</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="tZone" value="slightly-oily">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-tint"></i></span>
+                                    <span class="option-text">Slightly Shiny</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="tZone" value="normal">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-check-circle"></i></span>
+                                    <span class="option-text">Normal/Matte</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="tZone" value="dry">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-snowflake"></i></span>
+                                    <span class="option-text">Dry or Flaky</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="navigation">
+                            <button type="button" class="prev-btn" data-prev="1">Previous</button>
+                            <button type="button" class="next-btn" data-next="3">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="question" data-step="3">
+                        <h3><i class="fas fa-search"></i> What are your main skin concerns?</h3>
+                        <div class="options">
+                            <label class="option-card">
+                                <input type="radio" name="skinConcerns" value="acne" required>
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-bacteria"></i></span>
+                                    <span class="option-text">Acne and Breakouts</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="skinConcerns" value="dryness">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-icicles"></i></span>
+                                    <span class="option-text">Dryness and Flakiness</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="skinConcerns" value="combo">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-adjust"></i></span>
+                                    <span class="option-text">Both Oiliness and Dryness</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="skinConcerns" value="minimal">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-smile"></i></span>
+                                    <span class="option-text">Minimal Concerns</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="navigation">
+                            <button type="button" class="prev-btn" data-prev="2">Previous</button>
+                            <button type="button" class="next-btn" data-next="4">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="question" data-step="4">
+                        <h3><i class="fas fa-tint-slash"></i> How often do you need to apply moisturizer?</h3>
+                        <div class="options">
+                            <label class="option-card">
+                                <input type="radio" name="moisturizerNeeds" value="frequently" required>
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-clock"></i></span>
+                                    <span class="option-text">Multiple Times Daily</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="moisturizerNeeds" value="normal">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-calendar-day"></i></span>
+                                    <span class="option-text">Once Daily</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="moisturizerNeeds" value="selective">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-map"></i></span>
+                                    <span class="option-text">Only on Certain Areas</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="moisturizerNeeds" value="rarely">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-ban"></i></span>
+                                    <span class="option-text">Rarely or Never</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="navigation">
+                            <button type="button" class="prev-btn" data-prev="3">Previous</button>
+                            <button type="button" class="next-btn" data-next="5">Next</button>
+                        </div>
+                    </div>
+                    
+                    <div class="question" data-step="5">
+                        <h3><i class="fas fa-allergies"></i> How does your skin react to new products?</h3>
+                        <div class="options">
+                            <label class="option-card">
+                                <input type="radio" name="sensitivity" value="very-sensitive" required>
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-exclamation-circle"></i></span>
+                                    <span class="option-text">Often Irritated/Reddened</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="sensitivity" value="somewhat-sensitive">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-exclamation"></i></span>
+                                    <span class="option-text">Occasionally Sensitive</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="sensitivity" value="normal">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-check"></i></span>
+                                    <span class="option-text">Rarely Sensitive</span>
+                                </span>
+                            </label>
+                            <label class="option-card">
+                                <input type="radio" name="sensitivity" value="resilient">
+                                <span class="option-content">
+                                    <span class="option-icon"><i class="fas fa-shield-alt"></i></span>
+                                    <span class="option-text">Very Resilient</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="navigation">
+                            <button type="button" class="prev-btn" data-prev="4">Previous</button>
+                            <button type="submit" class="submit-btn">Get Results</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div id="result" class="result">
+                <div class="result-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Your Skin Type is: <span id="skin-result"></span></h2>
+                <div class="skin-description" id="skin-description"></div>
+                <div class="result-actions">
+                    <button id="start-over" class="btn">Take Quiz Again</button>
+                    <button id="back-to-website" class="btn">Back to Website</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

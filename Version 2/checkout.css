@@ -1,0 +1,185 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Navbar background color */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    z-index: 1000;
+    
+}
+#find-skin-type {
+    scroll-margin-top: 80px; /* Adjust to match your navbar height */
+}
+/* Left side of the navbar */
+.navbar-left a {
+    color: black;
+    text-decoration: none;
+    margin-right: 40px; /* Space between links */
+    font-size: 1.1rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Center logo */
+.navbar-center .logo {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Right side of the navbar */
+.navbar-right a {
+    color: black;
+    text-decoration: none;
+    margin-left: 40px; /* Space between links */
+    font-size: 1.1rem;
+    font-family:  Courier, monospace;
+};
+
+/* Hover effect for links */
+.navbar-left a:hover,
+.navbar-right a:hover {
+    color: #005f73; /* Darker blue on hover */
+    transition: color 0.3s ease;
+}
+
+/* Ensuring the navbar contents are spaced evenly */
+.navbar-left,
+.navbar-right {
+    display: flex;
+}
+
+/* Centering the logo */
+.navbar-center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  
+.shop-banner {
+    background-color: rgba(182, 221, 226, 0.521);
+    text-align: center;
+    padding: 2px 0;
+    padding-top: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+.shop-banner p {
+    display: inline-block;
+    padding-left: 100%; /* Start off-screen */
+    animation: moveText 10s linear infinite;
+  }
+  
+@keyframes moveText {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    100% {
+      transform: translateX(-100%); /* End position */
+    }
+  }
+
+/* Checkout Container */
+.checkout-container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: calibri;
+}
+
+/* Checkout Form */
+.checkout-form {
+    width: 100%;
+}
+
+.checkout-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+.checkout-form section {
+    margin-bottom: 20px;
+}
+
+.checkout-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.checkout-form input, .checkout-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: calibri;
+}
+
+/* Payment Method */
+.payment-method {
+    margin-bottom: 30px;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: -350px;
+}
+
+/* Payment Details */
+.payment-details {
+    display: none;
+    margin-top: 30px;
+}
+
+.payment-details input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background: rgba(182, 221, 226, 0.521);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: rgba(153, 205, 212, 0.521)
+}
+.rad{
+    margin-left: -400px;
+}
+.payText {
+    margin-left: 40px;
+}
