@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Bag</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body class="cart-body"> 
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+        <!-- Left Side Navigation -->
+        <div class="navbar-left">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="index.html#find-skin-type" data-scroll>SKIN TEST</a>
+        </div>
+
+        <!-- Center Logo -->
+        <div class="navbar-center">
+            <a href="index.html" class="logo">SkinCare Hub</a>
+        </div>
+
+        <!-- Right Side Navigation -->
+        <div class="navbar-right">
+            <a href="about.html">ABOUT</a>
+            <a href="index.html#footer" data-scroll>CONTACT</a>
+            <a href="cart.html">CART</a>
+        </div>
+    </nav>
+     <!-- Shop Banner -->
+     <div class="shop-banner">
+        <p>Free shipping on orders over Rs. 3,000 | Limited Time Offer</p>
+      </div>
+  <div class="shopping-container">
+    <!-- Shopping Bag Section -->
+    <div class="shopping-bag">
+      <h1>SHOPPING BAG</h1>
+      <div class="item-container">
+        <!-- Products will be dynamically inserted here -->
+      </div>
+    </div>
+
+    <!-- Order Summary Section -->
+    <div class="order-summary">
+      <h2>ORDER SUMMARY</h2>
+
+      <div class="promo-code">
+        <label for="promo">Have a Promo Code?</label>
+        <input type="text" id="promo" placeholder="Enter Promo Code">
+      </div>
+
+      <div class="summary-details">
+        <div class="summary-line">
+          <p>Estimated Shipping:</p>
+          <span id="shipping-cost">FREE</span>
+        </div>
+        <div class="summary-line total">
+          <p>Order Total:</p>
+          <span id="order-total">Rs.0.00</span>
+        </div>
+      </div>
+
+      <button class="checkout-btn">Proceed to Checkout</button>
+
+      <p class="paypal-text">PayPal available in checkout</p>
+    </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
