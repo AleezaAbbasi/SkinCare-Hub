@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - SkinCare Hub</title>
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+   <nav class="navbar">
+    <!-- Left Side Navigation -->
+    <div class="navbar-left">
+        <a href="index.html">HOME</a>
+        <a href="shop.html">SHOP</a>
+        <a href="index.html#find-skin-type" data-scroll>SKIN TEST</a>
+    </div>
+
+    <!-- Center Logo -->
+    <div class="navbar-center">
+        <a href="index.html" class="logo">SkinCare Hub</a>
+    </div>
+
+    <!-- Right Side Navigation -->
+    <div class="navbar-right">
+        <a href="about.html">ABOUT</a>
+        <a href="index.html#footer" data-scroll>CONTACT</a>
+        <a href="cart.html">CART</a>
+    </div>
+</nav>
+    <!-- Shop Banner -->
+    <div class="shop-banner">
+        <p>Free shipping on orders over Rs. 3,000 | Limited Time Offer</p>
+      </div>
+ 
+    <!-- Categories and Filter -->
+    <div class="categories-filter-container">
+      <!-- Categories -->
+      <div class="categories">
+        <div onclick="filterProducts('serums')" class="category-box">SERUMS</div>
+        <div onclick="filterProducts('moisturizer')" class="category-box">MOISTURIZERS</div>
+        <div onclick="filterProducts('toner')" class="category-box">TONERS</div>
+        <div onclick="filterProducts('creams')" class="category-box">CREAMS</div>
+      </div>
+
+      <!-- Filter Dropdown -->
+      <div class="filter-container">
+        <div class="filter-dropdown">
+          <button class="filter-btn">Sort: Featured Items ▼</button>
+          <div class="filter-options">
+            <div class="filter-group">
+              <strong>By Price</strong>
+              <p onclick="filterProducts('Low to High')">Low to High</p>
+              <p onclick="filterProducts('High to Low')">High to Low</p>
+            </div>
+            <div class="filter-group">
+              <strong>By Skin Type</strong>
+              <p onclick="filterProducts('Oily Skin')">Oily Skin</p>
+              <p onclick="filterProducts('Dry Skin')">Dry Skin</p>
+              <p onclick="filterProducts('Combination Skin')">Combination Skin</p>
+            </div>
+            <div class="filter-group">
+              <strong>By Skin Problem</strong>
+              <p onclick="filterProducts('Acne')">Acne</p>
+              <p onclick="filterProducts('Hyperpigmentation')">Hyperpigmentation</p>
+              <p onclick="filterProducts('Open Pores')">Open Pores</p>
+              <p onclick="filterProducts('Discoloration')">Discoloration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!-- Product Section -->
+    <div class="products">
+      <div class="product-card" data-category="serums" data-skin-problem="discoloration">
+        <img src="product1.jpg" alt="Product 1">
+        <h3> Hydrating Serum</h3>
+        <p class="product-description">A lightweight and hydrating serum for dry skin. Recommended for daily use.</p>
+        <p class="product-price">Rs. 1,899</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category="moisturizer" data-skin-problem="acne">
+        <img src="product2.jpg" alt="Product 2 Image">
+        <h3>Green Tea Moisturizer</h3>
+        <p class="product-description">Lightweight and mattifying. Ideal for oily and acne-prone skin.</p>
+        <p class="product-price">Rs. 1,200</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category="creams">
+        <img src="product3.jpg" alt="Product 3 Image">
+        <h3>Shea Butter Cream</h3>
+        <p class="product-description">Rich and nourishing. Best suited for very dry skin.</p>
+        <p class="product-price">Rs. 2,299</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-card" data-category="toner" data-skin-problem="discoloration">
+        <img src="product 4.jpg" alt="Product 4">
+        <h3>Tirtir Milk Toner</h3>
+        <p class="product-description"> A soothing toner that replenishes and hydrates the skin. Ideal for dry and sensitive skin types. </p>
+        <p class="product-price">Rs. 14,000</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="products">
+        <div class="product-card" data-category="#" data-skin-problem="Hyperpigmentation">
+          <img src="product 5.jpg" alt="Product 5 Image">
+          <h3>SPF 50+ Sunscreen Gel</h3>
+          <p class="product-description">Lightweight, non-greasy sun protection. Perfect for combination skin.</p>
+          <p class="product-price">Rs. 1,700</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      
+        <div class="product-card" data-category="#" data-skin-problem="open pores">
+          <img src="product 6.jpg" alt="Product 6 Image">
+          <h3>Charcoal Detox Mask</h3>
+          <p class="product-description">Deeply cleanses pores and removes impurities. Best for oily skin.</p>
+          <p class="product-price">Rs. 1,350</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      
+        <div class="product-card" data-category="creams" data-skin-problem="discoloration">
+          <img src="product 7.jpg" alt="Product 7 Image">
+          <h3>Collagen Boost Night Cream</h3>
+          <p class="product-description">Enhances elasticity and hydration. Ideal for dry and aging skin.</p>
+          <p class="product-price">Rs. 3,499</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      
+        <div class="product-card" data-category="#">
+          <img src="product 8.jpg" alt="Product 8 Image">
+          <h3>Aloe Vera Gel</h3>
+          <p class="product-description">Soothes irritation and provides hydration. Suitable for all skin types.</p>
+          <p class="product-price">Rs. 999</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+      
+    <div class="products">
+        <div class="product-card" data-category="toner" data-skin-problem="discoloration">
+          <img src="product 9.jpg" alt="Product 9 Image">
+          <h3>Rose Water Toner</h3>
+          <p class="product-description">Hydrates and refreshes skin. Suitable for all skin types.</p>
+          <p class="product-price">Rs. 1,400</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      
+        <div class="product-card" data-category="creams" data-skin-problem="discoloration">
+          <img src="product 10.jpg" alt="Product 10 Image">
+          <h3>Ceramide Barrier Cream</h3>
+          <p class="product-description">Restores skin barrier and locks in moisture. Ideal for dry and sensitive skin.</p>
+          <p class="product-price">Rs. 3,199</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      
+        <div class="product-card" data-category="#" data-skin-problem="acne">
+          <img src="product 11.jpg" alt="Product 11 Image">
+          <h3>Tea Tree Oil</h3>
+          <p class="product-description">Helps reduce acne and control excess oil. Best for oily skin.</p>
+          <p class="product-price">Rs. 850</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      
+        <div class="product-card" data-category="#" data-skin-problem="discoloration">
+          <img src="product 12.jpg" alt="Product 12 Image">
+          <h3>Avocado Face Mask</h3>
+          <p class="product-description">Deeply nourishes and soothes. Recommended for dry and dull skin.</p>
+          <p class="product-price">Rs. 1,599</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+  
+    <div class="products">
+        <div id="product1" class="product-card" data-category="serums" data-skin-problem="discoloration">
+            <img src="product 13.jpg" alt="Product 13 Image">
+            <h3>Hyaluronic Acid Serum</h3>
+            <p class="product-description">A lightweight serum for intense hydration. Suitable for dry skin.</p>
+            <p class="product-price">Rs. 2,500</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+         
+        <div id="product2" class="product-card" data-category="serums" data-skin-problem="open pores">
+            <img src="product 14.jpg" alt="Product 14 Image">
+            <h3>Niacinamide Serum</h3>
+            <p class="product-description">Perfect for reducing redness and controlling sebum. Best for oily skin.</p>
+            <p class="product-price">Rs. 2,199</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+          
+        <div class="product-card" data-category="creams" data-skin-problem="Hyperpigmentation">
+            <img src="product 15.jpg" alt="Product 15 Image">
+            <h3>Vitamin C Brightening Cream</h3>
+            <p class="product-description">Brightens dull skin and reduces dark spots. Great for combination skin.</p>
+            <p class="product-price">Rs. 3,499</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+         </div>
+          
+        <div id="product3" class="product-card" data-category="serums" data-skin-problem="Hyperpigmentation">
+            <img src="product 16.jpg" alt="Product 16 Image">
+            <h3>Bakuchiol Retinol Alternative</h3>
+            <p class="product-description">Gentle anti-aging solution for sensitive and oily skin.</p>
+            <p class="product-price">Rs. 2,000</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>             
+  <script src="shop.js"></script>
+ 
+</body>
+</html>
