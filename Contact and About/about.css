@@ -1,0 +1,164 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Main Container */
+.about-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Top Section with Background Image */
+.top-section {
+    background-image: url('blue.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* Top Heading Style */
+.top-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for better readability */
+    margin-bottom: 50px; /* Adds space below the heading to move it lower */
+    position: relative;
+    top: 50px; /* Pushes the heading lower */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* White Section */
+.white-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Content Inside the White Section */
+.content {
+    max-width: 800px;
+    margin: -100px auto 0; /* Pulls the image upwards into the overlap */
+    position: relative;
+    z-index: 1;
+}
+
+/* Image Styling */
+.about-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* Mission Section */
+.mission-section {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.mission-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Navbar background color */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+#find-skin-type {
+    scroll-margin-top: 80px; /* Adjust to match your navbar height */
+}
+/* Left side of the navbar */
+.navbar-left a {
+    color: black;
+    text-decoration: none;
+    margin-right: 40px; /* Space between links */
+    font-size: 1.1rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Center logo */
+.navbar-center .logo {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Right side of the navbar */
+.navbar-right a {
+    color: black;
+    text-decoration: none;
+    margin-left: 40px; /* Space between links */
+    font-size: 1.1rem;
+    font-family:  Courier, monospace;
+};
+
+
+/* Hover effect for links */
+.navbar-left a:hover,
+.navbar-right a:hover {
+    color: #005f73; /* Darker blue on hover */
+    transition: color 0.3s ease;
+}
+
+/* Ensuring the navbar contents are spaced evenly */
+.navbar-left,
+.navbar-right {
+    display: flex;
+}
+
+/* Centering the logo */
+.navbar-center {
+    flex-grow: 1;
+    text-align: center;
+}
