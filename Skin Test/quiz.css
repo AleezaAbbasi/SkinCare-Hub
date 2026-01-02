@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url('skintest 2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    height: 80%;
+    border-radius: 10px;
+    background: white; /* Transparent black background */
+    box-shadow: 0 0 10px white; 
+   
+}
+
+.quiz-content {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+}
+
+.quiz-question select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+    background-color: #333;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+}
+
+.result {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#skin-result {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+@media screen and (max-width: 768px) {
+    .quiz-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .quiz-content {
+        width: 90%;
+    }
+}

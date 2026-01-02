@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Type Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-wrapper">
+            <div class="quiz-content">
+                <h1>Skin Type Quiz</h1>
+                <form id="quizForm">
+                    <div class="quiz-question">
+                        <label for="skin-type">How does your skin feel after washing it?</label>
+                        <select id="skin-type" name="skinType" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="dry">Dry</option>
+                            <option value="normal">Normal</option>
+                            <option value="oily">Oily</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-question">
+                        <label for="shine">How does your skin feel in the afternoon?</label>
+                        <select id="shine" name="shine" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="oily">Oily</option>
+                            <option value="normal">Normal</option>
+                            <option value="dry">Dry</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-question">
+                        <label for="acne-frequency">How often do you experience acne or breakouts?</label>
+                        <select id="acne-frequency" name="acneFrequency" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="frequently">Frequently</option>
+                            <option value="occasionally">Occasionally</option>
+                            <option value="rarely">Rarely</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-question">
+                        <label for="hydration">How hydrated does your skin feel on a typical day?</label>
+                        <select id="hydration" name="hydration" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="hydrated">Hydrated</option>
+                            <option value="neutral">Neutral</option>
+                            <option value="dry">Dry</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+
+                <div id="result" class="result">
+                    <h2>Your Skin Type is: <span id="skin-result"></span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
